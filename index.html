@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' http://192.168.7.123; media-src *"-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <title>ParkPlatz Finder</title>
+</head>
+
+<body id="box" class="home">
+
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+        <div class="cube3"></div>
+    </div>
+
+    <div class="section">
+        <div id="map"></div>
+    </div>
+
+    <input id="origin" class="controls" type="text" placeholder="Enter an origin">
+    <input id="destination" class="controls" type="text" placeholder="Enter a destination">
+
+    <div class="section_assets">
+        <img id="img_bacabs" src="http://cdn.onlinewebfonts.com/svg/img_235874.svg">
+    </div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARulXkcgbcqPhDCOP3JtTw9d2Nlmi-Lus&callback=init.drawMap&libraries=places" async defer></script>
+
+</body>
+
+</html>
